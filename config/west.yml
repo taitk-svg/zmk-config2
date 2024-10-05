@@ -11,3 +11,15 @@ manifest:
       import: app/west.yml
   self:
     path: config
+    
+    
+build:
+  prj_conf: nice60.conf
+  dts_overlays:
+    - keyboards/nice60/nice60.dts
+  keymap:
+    - keyboards/nice60/keymaps/default/keymap.c
+
+# Optionally specify the board you're targeting
+boards:
+  - nice60
