@@ -1,0 +1,5 @@
+# taitk
+
+config SHIELD_TEST
+    def_bool $(shields_list_contains, test)
+
